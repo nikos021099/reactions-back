@@ -9,7 +9,7 @@ import {MessageModule} from "./message/message.module";
 
 
 @Module({
-  imports: [ConfigModule, MongooseModule.forRoot('mongodb://localhost/reactions'), MessageModule],
+  imports: [ConfigModule, MongooseModule.forRoot('mongodb://mongodb:27017/reactions'), MessageModule],
   controllers: [AppController],
   providers: [AppService],
 
